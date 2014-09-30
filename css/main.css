@@ -1,0 +1,346 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+img {
+  vertical-align: middle;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+:after, :before{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #fff;
+}
+
+:-ms-input-placeholder {
+  color: #fff;
+}
+
+input:focus{
+  outline: none;
+}
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+  font: 16px/26px Helvetica, Helvetica Neue, Arial;
+  background: url('../images/main-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+.launch-screen{
+  max-width: 540px;
+  width: 100%;
+  height: 540px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.launch-screen .screen{
+  border: 10px solid #fff;
+  text-align: center;
+  color: #fff;
+  padding: 54px 30px 67px;
+}
+.logo{
+  background: url('../images/logo.png') no-repeat left top transparent;
+  width: 219px;
+  height: 69px;
+  background-size: contain;
+  margin: 0 auto;
+}
+
+h2{
+  font-family: 'Proxima Nova Bl';
+  font-size: 36px;
+  text-transform: uppercase;
+  line-height: 48px;
+  margin: 58px 0 0;
+  letter-spacing: 0.21em;
+}
+
+.message{
+  font-family: 'Archer Medium';
+  font-size: 36px;
+  margin-top: 27px;
+  margin-bottom: 82px;
+}
+
+#mc_embed_signup_scroll, .thank-you{
+  max-width: 340px;
+  width: 100%;
+  margin: 0 auto;
+}
+#mc_embed_signup_scroll{
+  border: 1px solid #fff;
+  padding: 6px 12px;
+}
+.field, .btn{
+  font-family: 'Proxima Nova Rg';
+  font-size: 13px;
+  text-transform: uppercase;
+  display: inline-block;
+  height: 26px;
+  line-height: 22px;
+  vertical-align: top;
+  padding: 0;
+  letter-spacing: 0.46em;
+}
+
+.field{
+  border: none;
+  background: transparent;
+  color: #fff;
+  padding: 0;
+  width: 190px;
+}
+.btn{
+  width: 117px;
+  background-color: #fff;
+  color: #000;
+  border: 0;
+  padding-top: 3px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.thank-you{
+  background-color: #fff;
+  color: #000;
+  font-family: 'Proxima Nova Rg';
+  font-size: 15px;
+  line-height: 40px;
+  letter-spacing: 0.46em;
+  text-transform: uppercase;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+}
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+.hidden, .hide {
+  display: none !important;
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.pull-left{
+  float: left;
+}
+.pull-right{
+  float: right;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 568px) {
+/* ====================
+  INTERMEDIATE: Menu
+ ==================== */
+ 
+.logo{
+  width: 150px;
+  height: 57px;
+ }
+ .launch-screen{
+  height: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+ }
+ .launch-screen .screen{
+  border-width: 5px;
+  padding: 30px;
+ }
+ h2{
+  font-size: 15px;
+  margin-top: 15px;
+  line-height: 26px;
+ }
+ .message{
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+ }
+ .field, .btn{
+  width: 100%;
+ }
+ .field{
+  margin-bottom: 10px;
+ }
+ .pull-left{
+  float: none;
+ }
+ .pull-right{
+  float: none;
+ }
+}
+
+@media only screen and (max-width: 768px) {
+  /*body{
+    background-size: inherit;
+  } */
+}
+
+@media only screen and (min-width: 1140px) {
+
+}
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
